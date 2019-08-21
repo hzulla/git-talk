@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Jugendhackt Köln 2019 - Github Vortrag</title>
+        <title>Jugendhackt Hamburg 2019 - Git für Anfänger</title>
 
-        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-        <meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="Jugendhackt Hamburg 2019 - Git für Anfänger">
+        <meta name="author" content="Hanno Zulla">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -46,18 +46,23 @@
                 <!-- BEGIN OF SLIDES -->
 
                 <section>
-                    <img class="none-border" data-src="images/jugendhackt-logo.png" width="170">
-                    <h1>Github</h1>
-                    <h3>Gemeinsam mit Code die UM:WELT verbessern</h3>
+                    <img class="none-border" data-src="images/jugendhackt-logo.png" width="170"/>
+                    <h1>git</h1>
+                    <h3>Gemeinsam mit Code<br/>die UM:WELT verbessern</h3>
                     <p>
-                        <small>Yuki ● <a href="https://github.com/yuki-93">github.com/yuki-93</a></small>
+                        <small>hzulla ● <a href="https://github.com/hzulla">github.com/hzulla</a></small>
                     </p>
                     <p>
                         <small>Vorlage von JH Süd: Christian van Onzenoodt ● <a href="https://github.com/onc">github.com/onc</a></small>
+                        <small>Vorlage von yuki: Florian Macherey ● <a href="https://github.com/yuki-93">github.com/yuki-93</a></small>
+
                     </p>
                     <aside class="notes">
                         <p>
                             Fragen
+                        </p>
+                        <p>
+                            Wer kennt git?
                         </p>
                         <p>
                             Wer kennt github?
@@ -69,32 +74,6 @@
                 </section>
 
                 <section>
-                    <h2>Was ist Github?</h2>
-                    <ul>
-                        <li>Möglichkeit gemeinsam an Code zu arbeiten</li>
-                        <li>Soziales Netzwerk</li>
-                        <li>Webhoster für Git</li>
-                    </ul>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-                <section>
-                    <h3>Wer ist so auf GitHub?</h3>
-                    <ul>
-                        <li><a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a></li>
-                        <li><a href="https://github.com/nodejs/node">nodejs/node</a></li>
-                        <li><a href="https://github.com/jquery/jquery">jquery/jquery</a></li>
-                        <li><a href="https://github.com/rails/rails">rails/rails</a></li>
-                        <li><a href="https://github.com/facebook/react">facebook/react</a></li>
-                        <li><a href="https://github.com/django/django">django/django</a></li>
-                        <li><a href="https://github.com/angular/angular.js">angular/angular.js</a></li>
-                        <li><a href="https://github.com/adobe/brackets">adobe/brackets</a></li>
-                        <li><a href="https://github.com/zurb/foundation">zurb/foundation</a></li>
-                    </ul>
-                </section>
-
-                <section>
                     <h2>Warte... Was ist Git?</h2>
                     <ul>
                         <li>Versionsverwaltung für Dateien</li>
@@ -103,166 +82,170 @@
                 </section>
 
                 <section>
-                    <h2>Was heißt Versionsverwaltung?</h2>
-                    <img class="none-border" data-src="images/versionierung.png">
+                    <h2>Was ist git?</h2>
+                    <img class="none-border" data-src="images/schweizer-messer.jpg" height="400"/>
+                    <p>Das großartigste Werkzeug der Welt!</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Wie bedient man das denn?</h2>
-
-                    <p class="fragment" data-autoslide="1">
-                        Kopie auf den eigenen Rechner laden
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git clone https://github.com/...
-                    </code></pre>
-
-                    <p class="fragment" data-autoslide="1">
-                        Dateien zum Index hinzufügen
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git add readme.md
-                    </code></pre>
-
-                    <p class="fragment" data-autoslide="1">
-                        Commit mit Nachricht abschließen
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git commit -m "readme bearbeitet"
-                    </code></pre>
-
-                    <p class="fragment" data-autoslide="1">
-                        Veränderungen auf den Server laden
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git push origin master
-                    </code></pre>
+                    <h2>git ist dein Tagebuch</h2>
+                    <img class="none-border" data-src="images/liebes-tagebuch.jpg" height="400"/>
+                    <p>Das Tagebuch einer Software-Entwicklung.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Wichtig!</h2>
-
-                    <span class="fragment">
-                        <p>
-                            Bevor die Arbeit los geht einmal
-                        </p>
-                        <pre><code class="shell" data-trim>
-$ git pull
-                        </code></pre>
-                        <p>
-                            Um den aktuellen Stand zu bekommen
-                        </p>
-                    </span>
+                    <h2>git status</h2>
+                    <img class="none-border" data-src="images/git-status.png" height="400"/>
+                    <p>Was habe ich am Projekt verändert?</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Nützlich</h2>
-
-                    <p>
-                        Stand des lokalen Repos einsehen
-                    </p>
-                    <pre><code class="shell" data-trim>
-$ git status
-                    </code></pre>
-
+                    <h2>git commit</h2>
+                    <img class="none-border" data-src="images/git-commit.png" height="400"/>
+                    <p>Nach getaner Arbeit den Zustand festhalten.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Tipps für GitHub</h2>
+                    <h2>git log</h2>
+                    <img class="none-border" data-src="images/git-log.png" height="400"/>
+                    <p>Protokoll aller Arbeitsschritte und Side-Quests.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Readme</h2>
-                    <p>
-                        Zeige was du machst und wie es bedient wird
-                    </p>
-
-                    <pre><code class="md" data-trim>
-# Das ist unser tolles Projekt
-
-Es kann Einhörner auf Regenbögen tanzen lassen.
-Wenn du es benutzen willst, dann mach das:
-
-* lade es dir runter
-* führe die Datei `program` aus
-
-Wenn ein Fehler kommt, dann schau mal [hier](http://hilfe.de)
-                    </code></pre>
-
-                    <p>
-                        <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">
-                            <small>Markdown Spickzettel</small>
-                        </a>
-                    </p>
+                    <h2>git diff</h2>
+                    <img class="none-border" data-src="images/diff.png" height="400"/>
+                    <p>Jede Änderung verständlich und lesbar aufgedröselt.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Wähle eine Lizenz für dein Projekt</h2>
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th>MIT Lizenz (Expat)</th>
-                            <th>GNU General Public License v2.0 (GPL)</th>
-                        </tr>
-                        <tr>
-                            <td>einsehen</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr>
-                            <td>verwenden</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr>
-                            <td>kopieren</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr>
-                            <td>verändern</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td>copyleft</td>
-                            <td class="red-color">✗</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                    </table>
-
+                    <h2>git ist deine Zeitmaschine</h2>
+                    <img class="none-border" data-src="images/backtothefuture-88mph.gif" height="400"/>
+                    <p>Jeder frühere Zustand des Projekts sofort verfügbar.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Klingt cool! würde ich gerne ausprobieren</h2>
-
-                    <p>
-                        <a href="https://git-scm.com/download/win">Windows</a>
-                    </p>
-                    <p>
-                        <a href="https://git-scm.com/download/mac">Max OSX</a>
-                    </p>
-                    <p>
-                        Linux - Wie immer im Paket-Manager ;)
-                    </p>
+                    <h2>git reist vor und zurück</h2>
+                    <img class="none-border" data-src="images/backtothefuture-date.jpg" height="400"/>
+                    <p>Einen (alten) Zustand wiederherstellen.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>Gibt es da noch mehr?</h2>
-                    <p>Anfänger:
-                        <a href="https://rogerdudler.github.io/git-guide/index.de.html">git - Der einfache Einstieg</a>
-                    </p>
-                    <p>Fortgeschrittene:
-                        <a href="https://git-scm.com/book/de/v1/Git-Branching-Einfaches-Branching-und-Merging">Git Branching</a>
-                    </p>
-                    <p>Profi:
-                        <a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful git branching model (englisch)</a>
-                    </p>
+                    <h2>git erlaubt Alternativen</h2>
+                    <img class="none-border" data-src="images/backtothefuture-timeline.jpg" height="400"/>
+                    <p>Side Quests? Kein Problem. Man nennt dies einen Branch.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
-                    <h2>War mir zu schnell!</h2>
-                    <a href="https://jugendhackt.github.io/git-talk/">jugendhackt.github.io/git-talk/</a>
+                    <h2>git tag</h2>
+                    <img class="none-border" data-src="images/retropie-tags.png" height="400"/>
+                    <p>Releases und andere wichtige Zustände markieren.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git checkout</h2>
+                    <img class="none-border" data-src="images/git-checkout.png" height="200"/>
+                    <p>Tags/Branches wiederherstellen<br/>oder neuen Branch -b starten.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git ist dein Radiergummi</h2>
+                    <img class="none-border" data-src="images/made-a-mistake.gif" height="400"/>
+                    <p>Fehler im Code finden <i>und sie rückgängig machen!</i></p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git bisect</h2>
+                    <img class="none-border" data-src="images/regression-bug-report.png" height="400"/>
+                    <p>Genau den Commit finden, der den Fehler ausgelöst.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git revert</h2>
+                    <img class="none-border" data-src="images/regression-bug-report-revert.png" height="200"/>
+                    <p>Einen einzelnen Commit rückgängig machen.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git blame</h2>
+                    <img class="none-border" data-src="images/git-blame.png" height="300"/>
+                    <p>Erklärt, wo jede einzelne Zeile des Codes herkommt.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git macht euch zum Team</h2>
+                    <img class="none-border" data-src="images/power-rangers.jpg" height="400"/>
+                    <p>Mehrere Entwickler im gleichen Projekt - kein Problem!</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git ist verteilt</h2>
+                    <img class="none-border" data-src="images/git-pushpull.png" height="300"/>
+                    <p>Das Projekt mit anderen teilen.<br/>Änderungen hin- und herschicken.<br/>Änderungen von anderen übernehmen.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git löst Team-Konflikte</h2>
+                    <img class="none-border" data-src="images/pink-panther.gif" height="400"/>
+                    <p>Widersprechende Änderungen erkennen und auflösen.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git macht Teilen einfach</h2>
+                    <img class="none-border" data-src="images/sharing.gif" height="400"/>
+                    <p>Du kannst dein Projekt auf github usw. veröffentlichen.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>git macht Open Source einfach</h2>
+                    <img class="none-border" data-src="images/help-wanted.gif" height="400"/>
+                    <p>Via github usw. können andere Entwickler dir helfen.</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Häh?</h2>
+                    <p>Sucht im Netz nach einem <i>git cheat sheet</i> eurer Wahl.</p>
+                    <aside class="notes">
+                    </aside>
                 </section>
 
                 <section>
